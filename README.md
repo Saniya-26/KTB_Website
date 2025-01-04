@@ -40,6 +40,7 @@ KTB/
 │   ├── public/         # Static assets
 │   ├── src/            # React components and pages
 │   ├── package.json    # Frontend dependencies
+|   ├── .gitignore      # Ignored files for Git 
 │   └── vite.config.js  # Vite configuration file
 │
 ├── server/             # Node.js backend code
@@ -48,9 +49,9 @@ KTB/
 │   ├── routes/         # API routes
 │   ├── utils/          # Utility functions
 │   ├── app.js          # Main server file
+|   ├── .gitignore      # Ignored files for Git 
 │   └── config.env      # Environment variables
-│
-├── .gitignore          # Ignored files for Git
+|
 ├── README.md           # Project documentation
 ```
 
@@ -99,9 +100,10 @@ node app.js
 - **Authentication**: JWT (JSON Web Tokens)
 
 ---
+
 ## Implementation
 
-Drive link: 
+- **Drive link**: https://drive.google.com/file/d/1lYe7BqlRA1iT_ZqOPCVd92Q9xqTArBzq/view?usp=drive_link 
 ---
 
 ## Credits
