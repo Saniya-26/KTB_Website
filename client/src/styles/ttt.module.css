@@ -1,0 +1,61 @@
+/* Ttt.css */
+
+.ttt-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .ttt-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 45%;
+  }
+  
+  .ttt-board {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	gap: 5px;
+	width: 45%;
+  }
+  
+  .ttt-cell {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .ttt-cell.occupied {
+	cursor: not-allowed;
+  }
+  
+  .ttt-info h1,
+  .ttt-info h2 {
+	margin: 0;
+  }
+  
+  .ttt-info button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .ttt-info button:hover {
+	background-color: #0056b3;
+  }
+  

@@ -1,0 +1,107 @@
+/* Heading Style */
+h1 {
+  font-size: 2rem; /* Responsive font size */
+  text-align: center; /* Center align heading */
+  
+}
+
+/* Button Style */
+button:hover, .dispturn:hover {
+  background: #470886;
+  color: #fff;
+}
+
+/* Card Grid Container */
+.card-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* 4 columns */
+  grid-template-rows: repeat(3, 2fr); /* 3 rows */
+  grid-gap: 10px; /* Increased gap for better spacing */
+  justify-content: center; /* Center grid in container */
+  width: 100%; /* Ensure grid takes full width of container */
+  max-width: 600px; /* Max width to prevent overly large grid */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Card Style */
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Images */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: transform 0.3s ease; /* Smooth transition on image */
+}
+
+/* Front of the Card */
+.card .front {
+  position: absolute;
+  transform: rotateY(90deg);
+  backface-visibility: hidden;
+}
+
+/* Flipped State */
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+/* Display Turns */
+.dispturn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Flexbox for Turns and Grid Container */
+.game-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button, .dispturn {
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+
+  .game-container {
+    flex-direction: column; /* Stack vertically on small screens */
+    gap: 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto; /* Adjust rows automatically */
+  }
+
+  .dispturn {
+    margin-left: 0; /* Remove margin for small screens */
+    text-align: center; /* Center align text on small screens */
+  }
+}

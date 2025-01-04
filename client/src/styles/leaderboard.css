@@ -1,0 +1,93 @@
+/* Leaderboard.css */
+
+.leaderboard-container {
+  max-width: 1200px;
+
+  padding: 20px;
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.leaderboard-table th {
+  background-color: #7537d7; /* Green background for headers */
+  color: white;
+  font-weight: bold;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.leaderboard-table tr:hover {
+  background-color: #ddd; /* Light grey on hover */
+}
+
+.leaderboard-table .rank {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.leaderboard-table .player-name {
+  font-size: 1.1rem;
+}
+
+.leaderboard-table .score {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.leaderboard-table .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.leaderboard {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Light background color */
+    color: #333; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .leaderboard h3 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust font size */
+  }
+  
+  .leaderboard ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+  }
+  
+  .leaderboard ul li {
+    background-color: #f1f1f1; /* Background color for list items */
+    padding: 10px 15px; /* Padding inside list items */
+    margin-bottom: 10px; /* Spacing between list items */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Adjust font size */
+  }
+  
+  .leaderboard ul li:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+  }
+  

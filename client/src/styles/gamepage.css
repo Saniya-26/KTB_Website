@@ -1,0 +1,39 @@
+/* Main App container */
+.game {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Leaderboard container */
+  .gamecont {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #7537d7; /* Background color */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  /* Button styles */
+  .btn {
+    background-color: #252121; /* Button background color */
+    color: white;
+    padding: 10px 20px; /* Padding inside button */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+  }
+  
+  .btn:hover {
+    background-color: #494646; /* Background color on hover */
+  }
+  
+  /* Leaderboard component styles */
+  

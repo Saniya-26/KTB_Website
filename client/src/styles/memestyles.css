@@ -1,0 +1,111 @@
+/* Meme Container Styles */
+.meme-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Space between form and meme display */
+  padding: 20px;
+  
+}
+
+/* Form Styles */
+.meme-form-container {
+  flex: 1;
+  max-width: 300px; /* Fixed width for the form container */
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+  margin-bottom: 20px;
+}
+
+.meme-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.meme-form button {
+  background: #7537d7;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.meme-form button:hover {
+  background: #470886;
+}
+
+/* File Input Styles */
+.file-input {
+  margin-top: 10px;
+}
+
+/* Meme Display Styles */
+.meme-display {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+.blank-container {
+  width: 100%;
+  height: 300px; /* Fixed height for blank container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #666;
+  text-align: center;
+}
+
+.meme-canvas {
+  max-width: 100%; /* Ensure canvas fits within its container */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.download-btn {
+  margin-top: 10px;
+  background: #7537d7;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #470886;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .meme-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meme-form-container,
+  .meme-display {
+    width: 100%;
+    max-width: none; /* Remove width constraints for smaller screens */
+  }
+}
